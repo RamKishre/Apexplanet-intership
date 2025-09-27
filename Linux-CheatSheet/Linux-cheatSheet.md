@@ -6,7 +6,9 @@
 1. cd
 
 Purpose: Change directory.
+
 Syntax: cd [directory]
+
 Example:
 cd /etc → go to /etc
 Notes: With no argument, cd goes to home directory.
