@@ -10,28 +10,28 @@ The internship is divided into 6 main tasks covering cybersecurity basics, netwo
 
 ### 🔹 Task 1: Cybersecurity Basics
 - Introduction to cybersecurity concepts, CIA triad, and common attacks.  
-- Notes file: (to be added)
+
 
 ### 🔹 Task 2: Networking Fundamentals
-- OSI & TCP/IP models, IP addressing, and ports & protocols.  
-- Notes file: (to be added)
+- OSI & TCP/IP models, IP addressing, and ports & protocols.
 
+- 
 ### 🔹 Task 3: Cryptography Basics
 - Symmetric & asymmetric encryption, hashing, and digital signatures.  
-- Notes file: (to be added)
+
 
 ### 🔹 Task 4: Virtual Lab Setup
 - Installing *Kali Linux, Metasploitable, DVWA* and connecting them.  
-- Report & screenshots: (to be added)  
-- Video walkthrough: (to be added)
+- Report & screenshots
+
 
 ### 🔹 Task 5: Linux Fundamentals & Cheat Sheet
 - Linux commands for files, processes, networking, and permissions.  
-- Cheat sheet file: (to be added)
+
 
 ### 🔹 Task 6: Hands-on with Cybersecurity Tools
 - Practical demos using *Wireshark, Nmap, Netcat, Burp Suite*.  
-- Notes & screenshots: (to be added)
+
 
 ---
 
