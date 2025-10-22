@@ -2,7 +2,19 @@ OVERVIEW: Totally perfomed 5 namp scans towrads the Target system.
 
 Those are listed below :
 
-1.  -sS -> TCP SYN Scan (Stealth Scan)
+0. Normal nmap scan
+
+0.1 PURPOSE : To check which ports are currently open and closed
+
+0.2 Target :Metasploitable 2
+
+o.3 Reference image : https://github.com/RamKishre/Apexplanet-intership/raw/main/Images/namp_normal.png
+
+
+
+
+
+2.  -sS -> TCP SYN Scan (Stealth Scan)
    
 1.1   PURPOSE:Used to find open TCP ports without being easily logged.
    
