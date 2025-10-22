@@ -14,7 +14,7 @@ o.3 Reference image : https://github.com/RamKishre/Apexplanet-intership/raw/main
 
 
 
-2.  -sS -> TCP SYN Scan (Stealth Scan)
+1.  -sS -> TCP SYN Scan (Stealth Scan)
    
 1.1   PURPOSE:Used to find open TCP ports without being easily logged.
    
