@@ -72,3 +72,9 @@ This could lead to unexpected application behavior, including the unavailability
 ​SSL/TLS Issues: Multiple informational findings related to SSL and TLS configurations were noted.
 ​SSH Issues: Informational findings related to the SSH service were recorded.
 ​Port Scanning: The "Nessus Syn scanner" was used to identify open ports.
+
+
+
+
+
+For Reference :
