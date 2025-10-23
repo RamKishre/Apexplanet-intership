@@ -1,0 +1,74 @@
+// Vulnerability Scan Report
+
+
+​-> Scan Summary:
+
+​Scan Name: My Basic Network Scan
+​Policy: Basic Network Scan
+​Scan Status: Completed
+​Severity Base: CVSS v3.0
+​Scanner: Local Scanner
+
+​Start Time: Today at 12:58 PM
+​End Time: Today at 1:21 PM
+​Elapsed Time: 22 minutes
+
+
+​-> Target Details:
+
+
+​Host IP: 157.245.98.112
+​Hostname: brototype.com
+​Operating System: AIX 5.3 (Inferred)
+​Authentication: Fail (The scan was performed without credentials)
+
+
+​-> Vulnerability Overview:
+
+​The scan identified 28 unique vulnerabilities distributed across several severity levels.
+
+​Critical: At least one critical vulnerability was detected.
+
+​High: At least one high-severity vulnerability was confirmed.
+
+​Medium: At least two medium-severity vulnerabilities were confirmed.
+
+​Info: Multiple informational findings were recorded.
+
+​High-Severity Findings
+​1. MongoDB Improper Input Validation (SERVER-85263)
+​Severity: HIGH
+​CVSS v3.0 Score: 7.5
+​Plugin ID: 197879
+​CVE: CVE-2024-5372
+​Description: The version of MongoDB installed on the remote host is prior to a patched version. 
+This vulnerability involves an improper validation of metadata input, which may result in the server not correctly deserializing BSON.
+This could lead to unexpected application behavior, including the unavailability of server or status responses.
+
+
+​-> Evidence:
+
+​URL: http://157.245.98.112:27017/
+​Installed Version: 6.0.2
+​Fixed Version: 6.0.14 (or 5.0.25 / 7.0.6)
+​Solution: Upgrade to MongoDB version 5.0.25 / 6.0.14 / 7.0.6 or later.
+​Medium-Severity Findings
+
+
+​1. MongoDB Incorrect enforcement of index constraints
+​Severity: MEDIUM
+​CVSS v3.0 Score: 6.5
+​VPR (Vulnerability Priority Rating): 3.6
+​Description: The scan detected an issue related to "MongoDB 6.0.x < 6.0.17 / 7.0.x < 7.0.13 / 7.3.x < 7.3.4" concerning the incorrect enforcement of index constraints.
+
+
+​2. HSTS Missing From HTTPS Server (RFC 6797)
+​Severity: MEDIUM
+​CVSS v3.0 Score: 6.5
+​Description: The web server running on the host is not configured to send the HTTP Strict Transport Security (HSTS) header. This policy is a security mechanism that helps protect websites against protocol downgrade attacks and cookie hijacking.
+​Informational Findings & Service Detections
+​The scan also identified several informational items and running services, including:
+​HTTP Server Type and Version: The server type and version were identified (e.g., nginx HTTP Server Detection).
+​SSL/TLS Issues: Multiple informational findings related to SSL and TLS configurations were noted.
+​SSH Issues: Informational findings related to the SSH service were recorded.
+​Port Scanning: The "Nessus Syn scanner" was used to identify open ports.
