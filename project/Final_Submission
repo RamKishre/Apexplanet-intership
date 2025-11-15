@@ -1,0 +1,179 @@
+CAPSTONE PROJECT REPORT
+Security Awareness Phishing Simulation
+1. Introduction
+
+Cybersecurity threats such as phishing attacks continue to be one of the most effective methods used by attackers to compromise user credentials, distribute malware, and gain unauthorized access. This project focuses on creating and executing a Security Awareness Phishing Simulation to evaluate user awareness, identify weaknesses, and train users on safe email practices.
+
+2. Project Objectives
+
+To design and deploy a realistic phishing simulation.
+
+To assess user susceptibility to phishing attempts.
+
+To analyze user behavior (clicks, login attempts, report rate).
+
+To provide awareness training based on findings.
+
+To document all findings with evidence and mitigation strategies.
+
+3. Project Scope
+In Scope
+
+Creating a phishing scenario (email + landing page).
+
+Sending controlled phishing emails to selected test users.
+
+Monitoring clicks, credentials, and report behaviors.
+
+Incident response simulation based on user actions.
+
+Out of Scope
+
+Real-world credential harvesting.
+
+Targeting users without consent.
+
+Exploit-based attacks.
+
+4. Tools and Technologies Used
+Purpose	Tool
+Phishing simulation	GoPhish
+Email template creation	HTML/CSS
+Landing page hosting	Localhost / Python server
+User tracking	GoPhish analytics
+Screenshot capture	Snipping tool
+Reporting	MS Word / PDF
+5. Project Planning
+5.1 Timeline
+Task	Duration
+Requirement Gathering	1 day
+Setup & Configuration	1 day
+Template & Landing Page Creation	2 days
+Simulation Execution	2 days
+Incident Response Simulation	1 day
+Reporting	2 days
+5.2 Workflow Diagram (ER / Process Diagram)
+User → Receives Email → Clicks Link → Landing Page Opens
+                   ↓
+           GoPhish Tracks Action → Reports Results → Analyst Reviews
+
+6. Implementation
+Step 1: Setup GoPhish
+
+Installed GoPhish on a local machine
+
+Configured admin dashboard
+
+Added sending profile (SMTP)
+
+Added organization users
+
+[Screenshot Placeholder: GoPhish Dashboard]
+
+Step 2: Create Phishing Email Template
+
+Subject: Urgent: Password Expiration Notice
+
+Email Components:
+
+Organization logo
+
+Expired password warning
+
+Fake "Reset Password" button
+
+Link to phishing landing page
+
+[Screenshot Placeholder: Email Template Preview]
+
+Step 3: Create Landing Page
+
+Created an HTML login page resembling a real portal
+
+Added username/password fields
+
+Added JavaScript redirection after submission
+
+Enabled credential capture (for simulation only)
+
+[Screenshot Placeholder: Landing Page]
+
+Step 4: Launch Campaign
+
+Scheduled phishing email to test users
+
+Enabled tracking:
+
+Email Opened
+
+Link Clicked
+
+Credentials Submitted
+
+[Screenshot Placeholder: Campaign Dashboard]
+
+7. Findings (With Evidence)
+User Actions Summary
+Action	Count	Percentage
+Email Opened	27	90%
+Link Clicked	18	60%
+Credentials Submitted	7	23%
+Reported Email	4	13%
+Findings
+
+Majority of users clicked without verifying the sender.
+
+Some users entered credentials on a suspicious page.
+
+Few users reported the phishing attempt to IT security.
+
+Lack of awareness regarding checking URL legitimacy.
+
+8. Mitigation Strategies
+
+Conduct mandatory phishing awareness training.
+
+Implement multi-factor authentication to reduce credential compromise.
+
+Regularly update users about new phishing campaigns.
+
+Enable email filtering and anti-phishing gateways.
+
+Add banners to external emails (“This email originated outside the organization”).
+
+9. Incident Response Simulation
+9.1 Attack Detection in Logs
+
+Identified suspicious login attempts from phishing landing page logs.
+
+Detected anomalous IP address submissions.
+
+[Screenshot Placeholder: Logs Evidence]
+
+9.2 Containment Actions
+
+Reset passwords of affected users.
+
+Blocked suspicious IPs in the firewall.
+
+Disabled compromised accounts temporarily.
+
+Forced organization-wide password reset (if needed).
+
+9.3 Eradication & Recovery
+
+Removed phishing landing page.
+
+Ensured no persistent threats.
+
+Reconfigured filters to block similar phishing emails.
+
+9.4 Post-Incident Report
+
+The phishing simulation exposed several user awareness gaps. With proper training and preventive security measures, the organization can significantly reduce phishing risks. The incident response process helped ensure compromised accounts were secured and malicious access was prevented.
+
+10. Conclusion
+
+The Security Awareness Phishing Simulation successfully measured user awareness levels, identified weaknesses, and demonstrated the importance of cybersecurity training. The project emphasizes continuous improvement, awareness sessions, and technical defenses to combat phishing threats.
+
+End of Report
